@@ -33,6 +33,41 @@ EDUCATION = [
     }
 ]
 
+EXPERIENCE = [
+    {
+        'title': 'Software Developer',
+        'company': 'Promise Technology',
+        'description': 'tbd',
+        'from_to': 'December 2016 - Present'
+    },
+    {
+        'title': 'Patent Engineer',
+        'company': 'Louis International Patent Office',
+        'description': 'tbd',
+        'from_to': 'August 2014 - November 2016'
+    },
+]
+
+PUBLICATIONS = [
+    {
+        'title': 'An optically variable thin film with electrochemical capacitor property and use thereof',
+        'link': 'https://worldwide.espacenet.com/publicationDetails/biblio?CC=TW&NR=I455163B&KC=B&FT=D&ND=4&date=20141001&DB=EPODOC&locale=en_EP',
+    },
+    {
+        'title': 'Optically variable thin film with electrochemical capacitance property and use thereof',
+        'link': 'https://worldwide.espacenet.com/publicationDetails/originalDocument?FT=D&date=20140529&DB=EPODOC&locale=en_EP&CC=US&NR=2014146381A1&KC=A1&ND=5',
+    }, 
+    {
+        'title': 'Molybdate Hexacyanoferrate (MoOHCF) Thin Film: A Red Prussian Blue Analogue for Electrochromic Window Application',
+        'link': 'http://www.sciencedirect.com/science/article/pii/S0927024815003499',
+    },
+    {
+        'title': 'Multicolor Electrochromic Thin Films and Devices Based on the Prussian Blue Family Nanoparticles',
+        'link': 'http://www.sciencedirect.com/science/article/pii/S0927024815003918',
+    },
+
+]
+
 class MyView(TemplateView):
     template_name = "index.html"
 
@@ -42,6 +77,8 @@ class MyView(TemplateView):
             
             context[key] = val
         context['education'] = EDUCATION
+        context['experience'] = EXPERIENCE
+        context['publications'] = PUBLICATIONS
         # context['test'] = 'sdfsdf'
         # print(self.request.GET)
         return context
