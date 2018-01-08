@@ -21,9 +21,15 @@ MY_INFO = {
 EDUCATION = [
     {
         'school_name': 'NATIONAL TAIWAN UNIVERSITY',
+        'degree': 'MASTER OF SCIENCE',
+        'department': 'Bio-Industrial Mechatronics Engineering (BIME)',
+        'from_to': 'September 2010 - July 2012'
+    },
+    {
+        'school_name': 'NATIONAL TAIWAN UNIVERSITY',
         'degree': 'BACHELOR OF SCIENCE',
-        'department': 'BIME',
-        'from_to': 'August 2006 - May 2010'
+        'department': 'Bio-Industrial Mechatronics Engineering (BIME)',
+        'from_to': 'September 2006 - July 2010'
     }
 ]
 
