@@ -4,7 +4,7 @@ from django.views.generic import TemplateView
 # Create your views here.
 
 INTRO = """
-    A fullstack developer, passionate on python and javascript. 
+    I am a passionate software developer who love working in an efficient and friendly environment. In these years, I have gathered the knowledge of web development from work, and also spend a lot of free time exploring the latest technology advancement in web development and block chain technology. For example, I have finished several Dapps on ethereum platform and deployed on Rinkeby network.
     
 """
 
@@ -37,13 +37,20 @@ EXPERIENCE = [
     {
         'title': 'Software Developer',
         'company': 'Promise Technology',
-        'description': 'tbd',
+        'description': [
+            "Developed applications and tools for enterprise hybrid-cloud solution, consisting of multiple platforms and applications running on hyperconverged infrastructure.",
+            "Developed and maintained Portal for Cloud Storage Application.",
+            "Developed and Validated Database for Cloud Storage Management System.",
+            "Developed and Maintained client portal for in-house Virtual Desktop Infrastructure (VDI) Solution."
+        ],
         'from_to': 'December 2016 - Present'
     },
     {
         'title': 'Patent Engineer',
         'company': 'Louis International Patent Office',
-        'description': 'tbd',
+        'description': [
+            "Provided Clients with professional advice in regards to patent applications. Responsibilities included: i. Investigation and Identification of prior art ii. Specification drafting and patent refining iii. Office Action analysis and responses."
+        ],
         'from_to': 'August 2014 - November 2016'
     },
 ]

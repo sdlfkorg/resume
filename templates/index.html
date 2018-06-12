@@ -104,7 +104,11 @@
             <div class="resume-content mr-auto">
               <h3 class="mb-0">{{job.title}}</h3>
               <div class="subheading mb-3">{{job.company}}</div>
-              <p>{{job.description}}</p>
+              <ol>
+                {%for item in job.description %}
+                    <li>{{item}}</li>
+                {% endfor %}
+              </ol>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">{{job.from_to}}</span>
